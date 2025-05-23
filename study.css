@@ -1,0 +1,18 @@
+/* 标签选择器 */
+ins{
+    color: aquamarine;
+}
+/* 类选择器 */
+.font{
+    color: aquamarine;
+}
+.blue{
+    background-color:blue;
+    width:100px;
+    height:100px;
+}
+.purple{
+    background-color:purple;
+    width:100px;
+    height:100px;
+}

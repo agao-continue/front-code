@@ -4,20 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
+    <!-- 链接css文件 外部样式表-->
+     <link rel="stylesheet" href="study.css">
+    <!-- css 内部样式表 -->
+    <style>
+      /* 给某一类标签整体加css */
+      p{
+        color:#4CAF50
+      }
+      h1{
+        text-align: center;
+      }
+      table{
+        font-size:20px
+      }
+      #red{
+        color:rgba(red, green, blue, 0.5)
+      }
+      /* 通配符* */
+      *{
+        font-family: 楷体;
+        font-style:unset;
+      }
+    </style>
+      
 </head>
 <body>
     abcd
     <!-- 换行 -->
     <br>
     <!-- 文本格式化标签 -->
-    <!-- 粗体 -->
-     <strong>abcd</strong>
+    <!-- 粗体 id比class叼一点-->
+     <strong  id="red" class="font">abcd</strong>
     <!-- 斜体 -->
-     <em>abcd</em>
+     <em class="font">abcd</em>
     <!-- 下划线 -->
      <ins>abcd</ins>
     <!-- 删除线 -->
-     <del>abcd</del>
+     <del class="font">abcd</del>
     <!-- 水平线 -->
     <hr>
     <!-- 总共有6级标题 中间不止是能放文字哦 比如网站商标图片-->
@@ -53,8 +77,8 @@
         <li>huawei</li>
         <li>vivo</li>
     </ul>
-    <!--  有序列表ol-->
-    <ol>
+    <!--  有序列表ol 设置行高-->
+    <ol style="line-height: 1.5;">
         建立远程连接
         <li>本地远程分别创建仓库</li>
         <li>本地分支名修改为main</li>
@@ -179,5 +203,9 @@
     <hr>
     <!-- 实体字符 < " " > 的显示 -->
      实体字符：&nbsp; &lt; &gt;
+     <!-- 两个盒子 -->
+      <label for="">这是一行字</label>
+      <div class="blue">blue</div>
+      <div class="purple">purple</div>
     </body>
 </html>

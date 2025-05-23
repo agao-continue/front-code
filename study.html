@@ -45,6 +45,139 @@
     <!-- 视频标签video control loop autoplay muted -->
     <video src=""></video>
      <hr>
-     <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=470809977&bvid=BV1rT411g71g&cid=770518817&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="800" height="450"></iframe>
+     <!-- <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=470809977&bvid=BV1rT411g71g&cid=770518817&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="800" height="450"></iframe> -->
+    <!-- 无序列表ul -->
+     <ul>
+        品牌
+        <li>xiaomi</li>
+        <li>huawei</li>
+        <li>vivo</li>
+    </ul>
+    <!--  有序列表ol-->
+    <ol>
+        建立远程连接
+        <li>本地远程分别创建仓库</li>
+        <li>本地分支名修改为main</li>
+        <li>创建一个文件并提交</li>
+        <li>使用git remote add origin @...命令</li>
+        <li>git push -u origin main</li>
+    </ol>
+    <!-- 定义列表dl dt(title) dd(describe) -->
+    <dl>
+        <dt>球员</dt>
+        <dd>harden</dd>
+        <dd>lebron</dd>
+        <dd>george</dd>
+    </dl>
+    <!-- 表格 table tr th td-->
+    <table border="1">
+        <tr>
+            <th>球员</th>
+            <th>得分</th>
+        </tr>
+        <tr>
+            <td>curry</td><td>30</td>
+        </tr>
+        <tr>
+            <td>lebron</td><td>50</td>
+        </tr>
+        <tr>
+            <td>james</td><td>26</td>
+        </tr> 
+    </table>
+    <br>
+    <!-- input标签 text passward radio checkbox file ...-->
+     <input type="text" placeholder="请输入用户名">
+     <!-- 想添加多个文件？multiple属性 -->
+     <input type="file" multiple>
+     <br>
+     <!-- 有什么问题？两个radio没有关联 加入name属性 按道理checkbox也要 check默认属性-->
+     性别 <input type="radio" name="gender">男 
+          <input type="radio" name="gender" checked>女
+    <br>
+    <!-- 目前好像name没啥用？感觉以后会有用 -->
+    爱好 篮球<input type="checkbox" name="hobby" checked>
+    足球<input type="checkbox" name="hobby">
+    网球<input type="checkbox" name="hobby">
+    <br>
+    <!-- 下拉菜单 -->
+     城市
+        <select name="" id="">
+            <option value="">北京</option>
+            <option value="">上海</option>
+            <option value="">深圳</option>
+        </select>
+    <br>
+    <!-- textarea文本域 有个问题，文本框可以随意拖动大小，需禁用-->
+     <textarea name="" id="" placeholder="请输入文本"></textarea>
+     <br>
+    <label ><input type="radio" name="vice-gender">男</label>
+    <label ><input type="radio" name="vice-gender">女</label>
+    <!-- 两种按钮写法 -->
+    <input type="button">  
+     <button>千万别点</button>
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>按钮对比示例</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 40px;
+    }
+    .btn-box {
+      margin-bottom: 20px;
+    }
+    input[type="button"],
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      border: 1px solid #888;
+      background-color: #f0f0f0;
+      margin-right: 10px;
+    }
+    .fancy-button {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    .fancy-button strong {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>按钮写法对比</h2>
+
+  <div class="btn-box">
+    <label>🔹 input 写法（只能通过 value 设置文字）：</label><br>
+    <input type="button" value="点我一下">
+  </div>
+
+  <div class="btn-box">
+    <label>🔹 button 写法（可嵌套图标、HTML 等）：</label><br>
+    <button class="fancy-button">🚫 <strong>千万别点</strong></button>
+  </div>
+
 </body>
+</html>
+    <!-- 重置按钮 -->
+     <input type="text" placeholder="请输入用户名" name="chongzhi">
+     <input type="password" placeholder="请输入密码" name="chongzhi">
+     <button type="reset" name="chongzhi">重置</button>
+     <!-- 为什么加name没用呢，其实应该是要加form表单标签，用form包裹住账号密码 -->
+      <hr>
+      <form action="">
+        <input type="text" placeholder="请输入用户名" >
+        <input type="password" placeholder="请输入密码" >
+        <button type="reset" >重置</button>
+      </form>
+    <hr>
+    <!-- 实体字符 < " " > 的显示 -->
+     实体字符：&nbsp; &lt; &gt;
+    </body>
 </html>

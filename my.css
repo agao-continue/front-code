@@ -21,8 +21,31 @@ h1{
 p{
     text-indent: 2em;
 }
-/* 网页链接去下划线，换颜色 */
+/* 网页链接去下划线，换颜色,鼠标悬停 */
 a{
     text-decoration: none;
     color: rgb(53, 38, 133);
+}
+a:hover{
+    color:red;
+}
+/* 背景图片常用设置 */
+body {
+    /* 设置背景图片 */
+    background-image: url('图片路径/背景图片.jpg');
+
+    /* 背景图片的位置 */
+    background-position: center center; /* 使背景图片居中 */
+    
+    /* 背景图片的重复方式 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+
+    /* 背景图片的大小 */
+    background-size: cover; /* 背景图片覆盖整个容器，保持比例 */
+    
+    /* 背景图片的固定属性 */
+    background-attachment: fixed; /* 背景固定，滚动页面时背景不会动 */
+
+    /* 背景颜色，如果背景图片没有加载出来时显示颜色 */
+    background-color: #f0f0f0; /* 轻灰色背景 */
 }

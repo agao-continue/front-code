@@ -1,0 +1,28 @@
+/* 大标题居中 */
+h1{
+    text-align: center;
+    font-size: 32px;
+}
+/* 来源，发表时间等，暗显示 */
+.dark{
+    font-size: 16px;
+    color: #999;
+}
+/* 全局字体设置 */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 设置通用字体 */
+    font-size: 16px; /* 设置基础字体大小 */
+    line-height: 1.5; /* 行高，增加行间距，提升可读性 */
+    letter-spacing: 0.5px; /* 字间距，增加字母间隔，提升美观度 */
+    color: #333; /* 默认文字颜色，深灰色，减少纯黑色的刺眼感 */
+    text-align: left; /* 设置文本左对齐 */
+}
+/* 段落前面退格 */
+p{
+    text-indent: 2em;
+}
+/* 网页链接去下划线，换颜色 */
+a{
+    text-decoration: none;
+    color: rgb(53, 38, 133);
+}
